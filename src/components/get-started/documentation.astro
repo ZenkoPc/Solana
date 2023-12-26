@@ -1,0 +1,49 @@
+---
+import GridDocumentationComponent from "./gridDocumentationComponent.astro";
+
+---
+
+<section class="w-full px-5 xl:px-0 max-w-6xl mx-auto flex flex-col gap-5 mb-24">
+    <div>
+        <h2 data-aos="fade-up-right" class="text-white mb-5 text-4xl">
+            Dig deeper.
+        </h2>
+        <p data-aos="fade-right" class="text-softGray text-xl">
+            Learn from resources across the greater Solana ecosystem.
+        </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <GridDocumentationComponent
+            title="Core Documentation"
+            desc="The official Solana documentation on developing, validators, SPL tokens, wallets and more."
+        />
+        <GridDocumentationComponent
+            title="Cookbook"
+            desc="The Solana Cookbook is a developer resource that provides the essential concepts and references for building applications on Solana."
+        />
+        <GridDocumentationComponent
+            title="Solana Stack Exchange"
+            desc="Solana Stack Exchange is a question and answer site for Solana software users and developers."
+        />
+        <GridDocumentationComponent
+            title="Solana Playground"
+            desc="Easily build, deploy and test Solana programs and smart contracts from a browser IDE."
+        />
+        <GridDocumentationComponent
+            title="create-solana-dapp"
+            desc="Get up and running fast with Solana dApps, generate a project template in seconds."
+        />
+        <GridDocumentationComponent
+            title="Anchor Docs"
+            desc="Anchor is a framework for Solana's Sealevel runtime providing several convenient developer tools for writing smart contracts."
+        />
+        <GridDocumentationComponent
+            title="Solana Program Library"
+            desc="The Solana Program Library (SPL) is a collection of on-chain programs targeting the Sealevel parallel runtime."
+        />
+        <GridDocumentationComponent
+            title="Program Examples"
+            desc="A list of curated examples for a wide range of use cases implemented using on-chain programs."
+        />
+    </div>
+</section>

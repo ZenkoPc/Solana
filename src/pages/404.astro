@@ -1,0 +1,19 @@
+---
+import Header from '../components/header.astro';
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='Not Found'>
+    <div class='min-h-screen w-full pb-52 xs:pb-0'>
+        <Header selected='none' />
+        <div class='relative flex flex-col gap-10 justify-center items-center w-full h-full'>
+            <h1 class='text-white xs:mt-32 xl:my-0 text-center text-5xl xl:absolute top-52 font-bold left-52'>
+                Page not found
+            </h1>
+            <a href='/' class='text-white px-5 py-2 xl:absolute top-72 left-52 purple-gradient rounded-full text-sm font-bold'>
+                Go back
+            </a>
+            <img class='w-full h-full object-cover' src='/images/404.jpg' alt='404 img' >
+        </div>
+    </div>
+</Layout>

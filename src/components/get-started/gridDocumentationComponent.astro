@@ -1,0 +1,27 @@
+---
+import SendArrow from '../../icons/sendArrow.astro';
+interface Props {
+    title: string
+    desc: string
+}
+
+const { title, desc } = Astro.props
+---
+
+<div data-aos="fade-up" class="w-full h-full min-h-[282px] rounded-2xl bg-deepBlack text-white p-8 flex flex-col justify-between">
+    <div>
+        <span class="text-smoothPurple mb-1 uppercase text-xs">
+            tool / library
+        </span>
+        <h3 class="text-xl mb-3">
+            {title}
+        </h3>
+        <p class="max-w-[260px] mb-12">
+            {desc}
+        </p>
+    </div>
+    <a href="#" class="flex max-w-max gap-4 items-center uppercase hover:text-softGray text-xs transition-all">
+        learn more
+        <SendArrow />
+    </a>
+</div>

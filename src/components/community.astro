@@ -1,0 +1,101 @@
+---
+import GreenDot from '../icons/greenDot.astro'
+import HomeCard from './homeCard.astro';
+
+---
+
+<main class="w-full flex flex-col pb-44 px-10 lg:pt-32 items-center md:bg-center lg:bg-bottom bg-no-repeat md:bg-contain lg:bg-cover" style="background-image: url('/images/middle-back.png') ;">
+    <div class="max-w-6xl w-full">
+        <div class="flex flex-col items-start lg:flex-row lg:px-14 lg2:px-0 justify-center animate-fade-left animate-duration-700 text-white w-full pb-20">
+            <div data-aos="fade-down" class="text-4xl flex px-5 py-20 justify-start w-1/2">
+                <span class="max-w-[316px]">
+                    Join a community of millions.
+                </span>
+            </div>
+            <div class="[&>div>div>h2]:text-6xl [&>div>div>h2]:mb-2 [&>div>div>h2]:mt-14 md:[&>div>div>h2]:text-8xl items-center md:items-end w-full lg:w-1/2 [&>div>div>h2]:leading-snug flex gap-12 px-5 flex-col lg:justify-start [&>div>div>h2]:text-transparent [&>div>div>h2]:uppercase [&>div>div>h2]:bg-clip-text [&>div>div>span]:text-softDarkGray [&>div>div>span]:uppercase">
+                <div>
+                    <div data-aos="fade-down">
+                        <h2 data-aos="" class="purple-green-gradient">
+                            11.5m+
+                        </h2>
+                        <span >
+                            active accounts
+                        </span>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h2 data-aos="" class="blue-gradient">
+                            21.9m
+                        </h2>
+                        <span >
+                            nfts minted
+                        </span>
+                    </div>
+                    <div data-aos="fade-down">
+                        <h2  class="smooth-gradient">
+                            $0.00025
+                        </h2>
+                        <span >
+                            average cost per transaction
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:px-16 lg2:px-0 lg2:flex-row justify-center animate-fade-right animate-duration-700 text-white w-full md:pt-14">
+            <div data-aos="fade-down" class="text-4xl flex flex-col px-5 py-20 justify-start md:3/5 lg:w-2/5">
+                <span class="max-w-[300px]">
+                    Mass for
+                </span>
+                <span>
+                    mass adoption.
+                </span>
+                <span class="text-sm uppercase text-softGray flex items-center gap-3">
+                    <GreenDot />
+                    Live data
+                </span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-56 lg:gap-x-32 lg:ml-20 lg2:ml-0 [&>div]:text-lg [&>div>p]:last:text-[16px] grid-rows-2 lg2:gap-5 w-3/5 [&>div]:w-[280px] [&>div]:rounded-xl [&>div]:bg-black/30">
+                <div data-aos="fade-up" class="md:col-start-1 md:row-start-2 md:-mt-[520%] lg:-mt-[140%] lg2:-mt-[95%]">
+                    <HomeCard
+                        title="Fast"
+                        desc='Don’t keep your users waiting. Solana has block times of 400 milliseconds — and as hardware gets faster, so will the network.'
+                        number='3,969'
+                        slogan='transactions per second'
+                        style='mb-0'
+                        color="1FCFF1"
+                    /> 
+                </div>
+                <div data-aos="fade-down" class="md:col-start-2 md:row-start-1">
+                    <HomeCard
+                        title="Decentralized"
+                        desc='The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data remains secure and censorship resistant.'
+                        number='1,675'
+                        slogan='Validator nodes'
+                        style=''
+                        color='FFD512'
+                    />
+                </div>
+                <div data-aos="fade-up" class="md:col-start-1 md:row-start-3 md:-mt-[520%] lg:-mt-[140%] lg2:-mt-[95%]">                    
+                    <HomeCard
+                        title="Scalable"
+                        desc='Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users remain less than $0.01.'
+                        number='163,077,581,394'
+                        slogan='Total transactions'
+                        style=''
+                        color='9945FF'
+                    />
+                </div>
+                <div data-aos="fade-down" class="md:col-start-2 md:row-start-2">
+                    <HomeCard
+                        title="Energy Efficient"
+                        desc='Solana’s proof of stake network and other innovations minimize its impact on the <a href="#">environment</a><span>.</span> Each Solana transaction uses about the same energy as a few Google searches.'
+                        number='0%'
+                        slogan='Net carbon impact'
+                        style=''
+                        color='19FB9B'
+                    />
+                </div>                
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,32 @@
+---
+interface Props {
+    title: string
+    desc: string
+    imgSmall: string
+    imgBig: string
+    order: string
+    color: string
+}
+
+const { title, desc, imgSmall, imgBig, order, color } = Astro.props 
+
+---
+
+<div class="max-w-[920px] h-full max-h-[420px] w-full flex gap-3">
+    <div class={`flex gap-3 h-full w-full max-w-[300px] ${order}`}>
+        <div class="bg-activeGray rounded-lg flex justify-center gap-3 flex-col items-center h-1/2">
+            <h3 class={`text-2xl md:text-4xl`} style={{ color: color }}>
+                {title}
+            </h3>
+            <span class="max-w-[248px] text-center text-xs uppercase text-notThatDarkGray">
+                {desc}
+            </span>
+        </div>
+        <div class="h-1/2">
+            <img class="w-full h-full object-cover" src={`images/${imgSmall}`} alt={imgSmall}>
+        </div>
+    </div>
+    <div class="h-full w-full">
+        <img class="h-full w-full object-cover" src={`images/${imgBig}`} alt={imgBig}>
+    </div>
+</div>

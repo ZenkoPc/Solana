@@ -1,0 +1,1 @@
+import"./hoisted.0ba1e4b8.js";const e=document.querySelector("#purple-gradient-bottom");e?.addEventListener("mouseenter",()=>{e.classList.add("purple-gradient-reverse"),e.classList.remove("purple-gradient")});e?.addEventListener("mouseleave",()=>{e.classList.remove("purple-gradient-reverse"),e.classList.add("purple-gradient")});

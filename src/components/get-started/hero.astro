@@ -1,0 +1,29 @@
+---
+import Exchange from "../../icons/exchange.astro";
+
+---
+
+<section class="text-white grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-7xl mx-auto">
+    <div class="w-full px-10 lg: lg:px-0 mb-10 lg:mb-0 flex flex-col mt-14 lg:mt-0 lg:justify-center gap-5 lg:pl-20 animate-fade-right animate-duration-700">
+        <h1 data-aos="fade-down" class="text-5xl md:text-7xl xl:text-8xl">
+            Developer Resources
+        </h1>
+        <p data-aos="fade-up" class="text-xl max-w-[380px] text-softGray">
+            A manual for joining the Solana ecosystem. By builders for builders.
+        </p>
+        <div data-aos="fade-down" class="flex flex-col [&>a]:max-w-max lg:flex-row gap-3 mt-5">
+            <a href="#" class="text-black bg-spotifyGreen hover:bg-spotifyGreen/90 hover:text-white transition-all rounded-full py-2 text-[15px] px-5 uppercase">
+                Build now
+            </a>
+            <a href="#" class="uppercase flex gap-2 text-softGray border-softGray border px-4 py-2 text-[15px] transition-all hover:text-black hover:bg-white hover:border-black rounded-full">
+                stack exchange
+                <Exchange />
+            </a>
+        </div>
+    </div>
+    <div class="w-full max-h-[10px] md:max-h-[370px] lg:max-h-[678px] relative animate-fade-left animate-duration-700">
+        <div class="h-[678px] relative z-0"></div>
+        <div class="absolute -top-96 2xl:-right-[600px] -right-0 md:-top-7 z-10 h-[270px] lg:h-[570px] xl:h-[678px] w-[630px] bg-[#f087ff]/40 rounded-full blur-[250px]"></div>
+        <img data-aos="fade-up" src="/images/get-started.png" class="w-full hidden md:block z-20 md:h-[270px] lg:h-[570px] xl:h-[678px] top-0 2xl:-right-24 absolute" alt="primary img get started">
+    </div>
+</section>

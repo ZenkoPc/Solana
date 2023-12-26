@@ -1,0 +1,27 @@
+---
+import GreenDot from '../icons/greenDot.astro'
+interface Props {
+    title: string
+    desc: string
+    number: string
+    slogan: string
+    style: string
+    color: string
+}
+
+const { title, desc, number, slogan, style, color } = Astro.props
+---
+<div class={`[&>h3]:flex p-2 md:p-8 [&>h3]:gap-2 [&>h3]:items-center [&>h3]:text-3xl [&>p]:text-softDarkGray flex flex-col gap-4 ${style}`}>
+    <h3>
+        <div class={`w-[3px] h-10 mr-2`} style={{ backgroundColor: "#"+color }}></div> {title}
+    </h3>
+    <p class="max-w-[239px] [&>a]:text-newGreen [&>a]:underline [&>span]:text-newGreen" set:html={desc}>
+    </p>
+    <h3>
+        <GreenDot />
+        {number}
+    </h3>
+    <p class="uppercase">
+        {slogan}
+    </p>
+</div>

@@ -1,0 +1,104 @@
+---
+import Discord from "../icons/discord.astro";
+import Github from "../icons/github.astro";
+import Global from "../icons/global.astro";
+import Reddit from "../icons/reddit.astro";
+import Send from "../icons/send.astro";
+import Twitter from "../icons/twitter.astro";
+import Youtube from "../icons/youtube.astro";
+---
+<footer class="w-full px-5 md:px-10 lg:px-20 lg2:px-0 text-white pb-32 flex flex-col md:flex-row justify-center items-center min-h-[100px] -mt-32 bg-nightDark relative z-50">
+    <div class="max-w-[1100px] w-full flex gap-10 md:gap-0 flex-col-reverse md:flex-row justify-between mt-20">
+        <div class="flex flex-col gap-5">
+            <div data-aos="fade-up" class="w-8 h-7">
+                <img class="w-full h-full" src="/favicon.svg" alt="logo Solana">
+            </div>
+            <p data-aos="fade-down">
+                Managed by Solana Foundation
+            </p>
+            <div data-aos="fade-down" class="text-[#848595] flex gap-3">
+                <a href="#" class="hover:text-softGray">
+                    <Youtube />
+                </a>
+                <a href="#" class="hover:text-softGray">
+                    <Twitter />
+                </a>
+                <a href="#" class="hover:text-softGray">
+                    <Discord />
+                </a>
+                <a href="#" class="hover:text-softGray">
+                    <Reddit />
+                </a>
+                <a href="#" class="hover:text-softGray">
+                    <Github />
+                </a>
+                <a href="#" class="hover:text-softGray">
+                    <Send />
+                </a>
+            </div>
+            <span data-aos="fade-up"  class=" text-[#848595]">
+                © 2023 Solana Foundation. All rights reserved.
+            </span>
+        </div>
+        <div class="grid grid-cols-3 gap-10 text-[#848595]">
+            <nav data-aos="fade-up">
+                <ul class="flex flex-col gap-3 [&>li>a]:transition-all ">
+                    <li class="uppercase text-white">
+                        Solana
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Grants
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Break Solana
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Media Kit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Disclaimer
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav data-aos="fade-down">
+                <ul class="flex flex-col gap-3">
+                    <li class="uppercase text-white">
+                        Get Connected
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Ecosystem
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-softDarkGray">
+                            Newsletter
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div data-aos="fade-up" class="flex gap-2">
+                <Global />
+                EN
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,132 @@
+---
+import { BuildContainer } from '../components/build';
+import Clients from '../components/clients.astro';
+import Community from '../components/community.astro';
+import Header from '../components/header.astro';
+import Hero from '../components/hero.astro';
+import Slider from '../components/slider.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Solana - Home">
+	<div>
+		<Header selected='none' />
+		<Hero />
+		<Clients />
+		<Community />
+		<BuildContainer client:visible />
+		<Slider />
+	</div>
+</Layout>
+
+<style is:global>
+	
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -350%;
+  }
+}
+
+@keyframes scroll-md {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -280%;
+  }
+}
+
+@keyframes scroll-lg {
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -165%;
+  }
+}
+
+@keyframes scrollsub {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -333%;
+  }
+}
+
+@keyframes scrollsub-md {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -151.5%;
+  }
+}
+
+@keyframes scrollsub-lg {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -101%;
+  }
+}
+
+@keyframes scrollsub-xl {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -97%;
+  }
+}
+
+@media (min-width: 300px){
+  .animates{
+    animation: scroll 25s linear infinite;
+  }
+}
+
+@media (min-width: 730px){
+  .animates{
+    animation: scroll-md 25s linear infinite;
+  }
+}
+
+
+@media (min-width: 1000px){
+  .animates{
+    animation: scroll-lg 25s linear infinite;
+  }
+}
+
+@media (min-width:300px) {
+    .animates2{
+		animation: scrollsub 15s linear infinite;
+	}
+}
+
+@media (min-width:730px) {
+    .animates2{
+		animation: scrollsub-md 15s linear infinite;
+	}
+}
+
+
+@media (min-width:1000px) {
+    .animates2{
+		animation: scrollsub-lg 15s linear infinite;
+	}
+}
+
+@media (min-width:1150px) {
+    .animates2{
+		animation: scrollsub-xl 15s linear infinite;
+	}
+}
+
+
+</style>

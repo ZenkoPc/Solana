@@ -1,0 +1,125 @@
+---
+import DownArrow from "../icons/downArrow.astro";
+import { Menu } from './menu.tsx'
+
+interface Props {
+    selected: string
+}
+
+const { selected } = Astro.props
+
+---
+
+<header class="flex justify-center px-5 xl:px-0 w-full bg-black/60 sticky z-50 top-0">
+        <nav class="h-[67px] px-5 flex items-center max-w-6xl w-full justify-between">
+            <a href='/'>
+                <img class="h-full w-full" src="/images/logo.png" alt="logo home">
+            </a>
+            <div class="lg:hidden">
+                a
+            </div>
+            <Menu client:visible selected={selected} />
+            <ul class="hidden lg:flex gap-8 [&>li]:h-full h-full capitalize text-softGray [&>li]:cursor-pointer [&>li]:transition-all">
+                <li class={`hover:text-white items-center relative group flex gap-1 ${selected === 'learn' ? 'text-white' : '' }`}>
+                    learn
+                    <span class="group-hover:-rotate-180 transition-all">
+                        <DownArrow />
+                    </span>
+                    <div class="absolute border-softGray border hidden items-center w-max group-hover:block px-2 text-smoothPurple -bottom-36 right-0 bg-deepBlack rounded-xl rounded-tr-none py-3">
+                        <ul class="text-right [&>li]:transition-all">
+                            <li class="py-2 hover:text-white border-white/50 w-full">
+                                <a href="#">
+                                    Read Docs
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white border-white/50 w-full pl-5">
+                                <a href="#">
+                                    Solana Playground
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white">
+                                <a href="#">
+                                    Anchor Docs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class={`hover:text-white relative items-center group flex gap-1 ${selected === 'build' ? 'text-white' : '' }`}>
+                    build
+                    <span class="group-hover:-rotate-180 transition-all">
+                        <DownArrow />
+                    </span>
+                    <div class="absolute hidden border border-softGray items-center w-max group-hover:block px-2 text-smoothPurple -bottom-36 right-0 bg-deepBlack rounded-xl rounded-tr-none py-3">
+                        <ul class="text-right [&>li]:transition-all">
+                            <li class="py-2 hover:text-white border-white/50 w-full">
+                                <a href="/get-started">
+                                    Get Started
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white border-white/50 w-full pl-5">
+                                <a href="#">
+                                    create-solana-app
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white">
+                                <a href="#">
+                                    Metaplex Docs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class={`hover:text-white relative items-center group flex gap-1 ${selected === 'network' ? 'text-white' : '' }`}>
+                    network
+                    <span class="group-hover:-rotate-180 transition-all">
+                        <DownArrow />
+                    </span>
+                    <div class="absolute border border-softGray hidden items-center w-max group-hover:block px-2 text-smoothPurple -bottom-36 right-0 bg-deepBlack rounded-xl rounded-tr-none py-3">
+                        <ul class="text-right [&>li]:transition-all">
+                            <li class="py-2 hover:text-white border-white/50 w-full">
+                                <a href="#">
+                                    Scaffold series
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white border-white/50 w-full pl-5">
+                                <a href="#">
+                                    Solana library series
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white">
+                                <a href="#">
+                                    cookbook
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class={`hover:text-white relative items-center group flex gap-1 ${selected === 'community' ? 'text-white' : '' }`}>
+                    community
+                    <span class="group-hover:-rotate-180 transition-all">
+                        <DownArrow />
+                    </span>
+                    <div class="absolute border border-softGray hidden items-center w-max group-hover:block px-2 text-smoothPurple -bottom-36 right-0 bg-deepBlack rounded-xl rounded-tr-none py-3">
+                        <ul class="text-right [&>li]:transition-all">
+                            <li class="py-2 hover:text-white border-white/50 w-full">
+                                <a href="#">
+                                    NFTs
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white border-white/50 w-full pl-5">
+                                <a href="#">
+                                    Solana Gaming
+                                </a>
+                            </li>
+                            <li class="py-2 hover:text-white">
+                                <a href="#">
+                                    DAOs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+</header>
